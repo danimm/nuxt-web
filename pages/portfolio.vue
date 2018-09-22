@@ -7,7 +7,6 @@
       .card-content
         .media-content
           p.title {{ p.title }}
-          p.subtitle subtitulo
         .content {{ p.description }}
 
 
@@ -20,25 +19,25 @@
         projects: [
           {
             title: 'Vue Music',
-            description: 'Proyecto final del curso de Vuejs en Platzi.com, en el cuál usamos la API de Spotify para crear un reproductor de música online.',
+            description: 'Final project of the Vue.js course in Platzi.com, in which we use the Spotify API to make an online music player.',
             src: './images/vuemusic.png',
             url: 'http://vue-music.now.sh'
           },
           {
             title: 'Last.fm',
-            description: 'Este es un proyecto simple para mostrar una pequeña lista de artistas usando la API de last fm.',
+            description: 'In this simple project to show a small list of artists using the last fm API.',
             src: './images/vuebasic.png',
             url: 'http://vue-basic.surge.sh'
           },
           {
-            title: 'Manipulando el DOM',
-            description: 'Este es un proyecto usando el Local Storage para crear una lista de Tareas.',
+            title: 'Memory game',
+            description: 'This is a project using the local storage to create a list of tasks.',
             src: './images/vuelocalstorage.png',
             url: 'http://vue-local-storage.surge.sh'
           },
           {
-            title: 'Juego de memoria',
-            description: 'Este proyecto es un juego de memorizar letras usando sólo Javascript. Sólo para vista de escritorio.',
+            title: 'Memory game',
+            description: 'This project is a game to memorize letters using only Javascript. Only for desktop.',
             src: './images/vuememory.png',
             url: 'http://vue-memory.surge.sh'
           }
@@ -58,6 +57,5 @@
     margin: 20px;
   }
 
-  figure {
-  }
+
 </style>
