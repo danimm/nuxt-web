@@ -7,15 +7,13 @@
             img(src="~/static/daniel.jpg")
         .column
           h3 About me
-          p I am passionate about technology. I am a technician in Systems Administration, but the las years i am directing my career to the Web development.
+          p Hi! I'm Daniel and I am a curious, hard-working and ambitious person who pays attention to the small details. I am into the Frontend development world since 2016. In addition I study on a daily basis using an online course format the new platform technologies, in order to be up to date regarding the new frameworks and skills that are used and demanded by the companies nowadays.  
           p I love learning the new technologies of modern web development and creating personal projects to put my knowledge into practice.
           p You can find all my personal projects in personal Portfolio
-          h3 Front end development
-          p I'm specializing in Frontend Web Development, with the current Web standards and always looking for new front-end frameworks to add to my development stack.
-          h3 Responsive Design
-          p Always looking for the best user experience using responsive designs, with frameworks like Bootstrap, Materialize-css (used in this website), Foundation... It doesn't matter the device or the resolution, you will always have a good user experience.
-          h3 100% Self-taught
-          p In the world of web development, you have to learn constantly! That's why I study daily to be always updated with the new frameworks and libraries. One of my favorite places to study is in Platzi. It is an online education platform with more than 500,000 students. You can check my profile here
+          //- h3 Front end development
+          //- p I'm specializing in Frontend Web Development, with the current Web standards and always looking for new front-end frameworks to add to my development stack.
+          //- h3 Responsive Design
+          //- p Always looking for the best user experience using responsive designs, with frameworks like Bootstrap, Materialize-css (used in this website), Foundation... It doesn't matter the device or the resolution, you will always have a good user experience.
 </template>
 
 <script>

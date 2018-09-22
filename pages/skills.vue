@@ -1,16 +1,20 @@
 <template lang="pug">
   .grid
+    
     .message.is-light
       .message-header.has-text-centered
-        p.title.cen What can i do ?
+        p.title.cen Long life learning
       .message-body
         .content.progress-container
           .content(v-for="t in techs")
             p {{ t.title }}
             progress(class="progress is-success" :value="t.progress" max="100")
-        p In the world of web development, you have to learn constantly! That's why I study daily to be always updated with the new frameworks and libraries. One of my favorite places to study is in Platzi. It is an online education platform with more than 500,000 students.
-        br
-        p You can check my profile here
+        p In the world of web development, you have to learn constantly! That's why I study daily to be always updated with the new frameworks and libraries.
+    .notification
+      p One of my favorite places to study is in Platzi.
+      p It is an online education platform with more than 700,000 students around the world.
+      br
+      a.button.is-link(href="https://platzi.com/@Danimm" target="_blank") Check my profile!
     .contenedor
       span.tag.is-info.is-medium(
         v-for="i in Javascript"
@@ -26,6 +30,10 @@
     .contenedor
       span.tag.is-warning.is-medium(
         v-for="i in Backend"
+      ) {{ i.title }}
+    .comming-soon
+      span.tag.is-light.is-medium(
+        v-for="i in Soon"
       ) {{ i.title }}
 </template>
 
@@ -143,6 +151,11 @@
           },
           {
             title: 'Firebase'
+          }
+        ],
+        Soon: [
+          {
+            title: 'Comming soon..✌🏻'
           },
           {
             title: 'Node'
@@ -174,8 +187,14 @@
     grid-row-start: 2;
     // justify-items: center;
   }
+  .comming-soon {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-column: 1 / -1;
+  }
   .message {
-    grid-column: 2 / span 2;
+    grid-column: 1 / span 3;
   }
   // .message p.title {
   //   color: white;
@@ -192,10 +211,25 @@
   .tag:nth-of-type(1) {
     grid-column: span 2;
     justify-self: stretch;
+    font-weight: bold;
   }
   .progress-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
+  .notification {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  a.is-link {
+    text-decoration: none;
+  }
+  // .comming-soon {
+  //   grid-auto-flow: row;
+  //   grid-row-start: 4;
+  //   grid-column-start: 3;
+  //   grid-column: span 2;
+  // }
 </style>
